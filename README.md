@@ -1,7 +1,7 @@
 # DeepfakeImageDetection
 Azure(Custom Vision) API을 활용한 딥페이크 영상 분석
 
-![웹페이지_입력](https://github.com/user-attachments/assets/094f682a-61a9-4673-9a83-187c73e0a056)
+![웹페이지_입력](https://github.com/user-attachments/assets/094f682a-61a9-4673-9a83-187c73e0a056)   
 웹페이지에 동영상 파일을 넣은 후에 업로드 버튼을 누르면 Face.py 코드가 실행되어 동영상이 지정한 프레임 단위로 전처리를 거쳐 저장됩니다.
 
 ![이미지 전처리_결과](https://github.com/user-attachments/assets/16d75261-ca51-489d-a24f-26908fc8720e)
