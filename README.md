@@ -10,3 +10,6 @@ Azure(Custom Vision) API을 활용한 딥페이크 영상 분석
 
 ![코드_결과](https://github.com/user-attachments/assets/f1ae30f7-e6a6-4ffb-bc66-4e4e309549d0)   
 ![웹페이지_결과](https://github.com/user-attachments/assets/d802b01d-6d21-4762-8b79-907ce386c269)   
+
+진행한 결과는 Azure에서 아래와 같이 확인 가능합니다.
+![Azure_결과 (1)](https://github.com/user-attachments/assets/44c7e25f-95fc-45d0-8e46-6e95e7d2bec7)
