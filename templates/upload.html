@@ -1,0 +1,15 @@
+<!-- templates/upload.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>딥페이크 탐지기</title>
+</head>
+<body>
+    <h1>딥페이크 탐지기</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="video" accept="video/*" required>
+        <button type="submit">업로드</button>
+    </form>
+</body>
+</html>
