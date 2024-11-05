@@ -2,16 +2,14 @@ from pymongo import MongoClient
 import os
 from flask import Flask, request, render_template
 import CustomVision
+import Face
+
 app = Flask(__name__)
 
 # MongoDB 연결
-client = MongoClient('몽고DB 연결 코드')
+client = MongoClient('mongodb+srv://ms0682:1234@df-db.rzxlu.mongodb.net/?retryWrites=true&w=majority&appName=DF-DB')
 db = client['database']
 collection = db['myCollection']
-
-import cv2
-import os
-from mtcnn import MTCNN
 
 
 # 업로드된 파일을 저장할 폴더 설정
@@ -25,9 +23,6 @@ def index():
 
 @app.route('/upload', methods=['POST'])
 def upload():
-    import Face
-    import CustomVision
-    import os
     video = request.files['video']
     if video.filename == '':
         return "파일 이름이 없습니다.", 400
