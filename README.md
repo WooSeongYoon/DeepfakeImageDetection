@@ -11,8 +11,8 @@ Azure(Custom Vision) API을 활용한 딥페이크 영상 분석
 딥페이크 분석은 사전에 학습한 Azure Custom Vision API를 사용하여 확률을 통해 딥페이크 영상 여부를 판단합니다.   
 판단은 Deepfake 확률만 있으면 딥페이크 영상으로 판단하고 Non Deepfake 확률만 있을 경우에는 딥페이크 영상이 아니라고 판단합니다.   
 Deepfake와 Non Deepfake의 활률이 둘다 존재하면 각각의 평균값을 반환하여 평균값이 높은 쪽으로 판단합니다.   
-판단을 완료하면 아래와 같이 웹페이지를 통해 확인이 가능합니다..("\n")
+판단을 완료하면 아래와 같이 웹페이지를 통해 확인이 가능합니다.   
 ![웹페이지_결과](https://github.com/user-attachments/assets/d802b01d-6d21-4762-8b79-907ce386c269)   
 
-진행한 결과는 Azure에서 아래와 같이 확인 가능합니다.
+진행한 결과는 Azure에서 아래와 같이 확인 가능합니다.   
 ![Azure_결과 (1)](https://github.com/user-attachments/assets/44c7e25f-95fc-45d0-8e46-6e95e7d2bec7)
