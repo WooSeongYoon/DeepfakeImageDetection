@@ -5,7 +5,7 @@ import CustomVision
 app = Flask(__name__)
 
 # MongoDB 연결
-client = MongoClient('mongodb+srv://ms0682:1234@df-db.rzxlu.mongodb.net/?retryWrites=true&w=majority&appName=DF-DB')
+client = MongoClient('몽고DB 연결 코드')
 db = client['database']
 collection = db['myCollection']
 
