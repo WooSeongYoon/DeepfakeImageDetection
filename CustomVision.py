@@ -4,8 +4,8 @@ import os
 
 def predict_image(image_path):
     # Custom Vision API 정보 설정
-    prediction_key = "d6bc657cca1d4325977b60ee1f8c6e79"  # 예측 키
-    endpoint = "https://21928296vision-prediction.cognitiveservices.azure.com/customvision/v3.0/Prediction/f020151b-1afd-453b-bd3a-ef95e5436549/classify/iterations/Iteration1/image"
+    prediction_key = "Azure Custom Vision 예측키"  # Prediction-Key
+    endpoint = "Azure Custom Vision 이미지 파일 주소" # If you have an image file
 
     # 이미지 파일 읽기
     with open(image_path, "rb") as image_file:
