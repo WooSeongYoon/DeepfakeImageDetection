@@ -2,13 +2,16 @@
 Azure(Custom Vision) API을 활용한 딥페이크 영상 분석
 
 ![웹페이지_입력](https://github.com/user-attachments/assets/094f682a-61a9-4673-9a83-187c73e0a056)   
-웹페이지에 동영상 파일을 넣은 후에 업로드 버튼을 누르면 Face.py 코드가 실행되어 동영상이 지정한 프레임 단위로 전처리를 거쳐 저장됩니다.
-
+해당 이미지는 app.py파일을 실행한 이미지입니다.
+웹페이지에서 "파일 선택" 버튼을 누르고 동영상을 업로드한 후에 "업로드" 버튼을 눌러 딥페이크 분석을 진행합니다.
+업로드 버튼을 누르면 Face.py파일이 실행되어 동영상이 지정한 프레임 단위로 전처리를 진행하여 이미지로 저장합니다.
 ![이미지 전처리_결과](https://github.com/user-attachments/assets/16d75261-ca51-489d-a24f-26908fc8720e)   
-이렇게 저장된 이미지는 사전에 학습한 Azure CustomVision API를 사용하여 딥페이크 분석을 진행합니다.
-분석이 진행될 때 아래와 같이 결과를 아래와 같이 확인할 수 있습니다.
 
-![코드_결과](https://github.com/user-attachments/assets/f1ae30f7-e6a6-4ffb-bc66-4e4e309549d0)   
+이미지가 모두 저장되면 CustomVision.py파일이 실행되어 딥페이크 분석을 진행합니다.
+딥페이크 분석은 사전에 학습한 Azure Custom Vision API를 사용하여 확률을 통해 딥페이크 영상 여부를 판단합니다.
+판단은 Deepfake 확률만 있으면 딥페이크 영상으로 판단하고 Non Deepfake 확률만 있을 경우에는 딥페이크 영상이 아니라고 판단합니다.
+Deepfake와 Non Deepfake의 활률이 둘다 존재하면 각각의 평균값을 반환하여 평균값이 높은 쪽으로 판단합니다.
+판단을 완료하면 아래와 같이 웹페이지를 통해 확인이 가능합니다..
 ![웹페이지_결과](https://github.com/user-attachments/assets/d802b01d-6d21-4762-8b79-907ce386c269)   
 
 진행한 결과는 Azure에서 아래와 같이 확인 가능합니다.
