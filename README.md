@@ -18,7 +18,6 @@ FaceNet에 기반한 MTCNN 모델을 활용하여 이미지를 아래 표와 같
 Microsoft Azure Custom Vision을 이용해 데이터셋을 학습하고, 이를 통해 학습된 모델은 아래와 같은 결과를 리턴하게 됩니다.   
 ![image](https://github.com/user-attachments/assets/958c1040-485e-4195-8441-e743a3445cf9)
 Azure API 결과   
-
 이러한 Not DeepFake, DeepFake 확률을 최대 확률, 최소 확률, 평균 확률 ,총합 확률을 종합하여 딥페이크를 판단하게 합니다.
 
 4. 웹 서버 및 웹
@@ -26,7 +25,7 @@ Azure API 결과
 
 
 # 프로그램 실행
-## 1. 웹페이지 내에 영상 업로드
+1. 웹페이지 내에 영상 업로드
 ![웹페이지_입력](https://github.com/user-attachments/assets/094f682a-61a9-4673-9a83-187c73e0a056)   
 해당 이미지는 app.py파일을 실행한 이미지입니다.   
 웹페이지에서 "파일 선택" 버튼을 누르고 동영상을 업로드한 후에 "업로드" 버튼을 눌러 딥페이크 분석을 진행합니다.   
@@ -34,7 +33,7 @@ Azure API 결과
 ![이미지 전처리_결과](https://github.com/user-attachments/assets/16d75261-ca51-489d-a24f-26908fc8720e)   
 
 
-## 2. 업로드된 영상 분석
+2. 업로드된 영상 분석
 이미지가 모두 저장되면 CustomVision.py파일이 실행되어 딥페이크 분석을 진행합니다.   
 딥페이크 분석은 사전에 학습한 Azure Custom Vision API를 사용하여 확률을 통해 딥페이크 영상 여부를 판단합니다.   
 
@@ -43,7 +42,7 @@ Deepfake 확률만 존재: 딥페이크 영상.
 Non Deepfake 확률만 존재: 딥페이크 영상이 아님.   
 Deepfake와 Non Deepfake의 활률이 둘다 존재: 각각의 평균값을 반환하여 평균값이 높은 쪽으로 판단.   
 
-## 3. 결과 출력
+3. 결과 출력
 판단을 완료하면 아래와 같이 웹페이지를 통해 확인이 가능합니다.   
 ![웹페이지_결과](https://github.com/user-attachments/assets/d802b01d-6d21-4762-8b79-907ce386c269)   
 
