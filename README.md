@@ -7,18 +7,17 @@ Azure(Custom Vision) API을 활용한 딥페이크 영상 분석
  
 # 설계 및 구형
 1. 데이터셋 제작
-youtube에 있는 유명인들의 딥페이크 영상과 DeepFaceLab2.0을 이용해 AI로 직접 제작한 딥페이크를 만들어서 제작 하였습니다.
+youtube에 있는 유명인들의 딥페이크 영상과 DeepFaceLab2.0을 이용해 AI로 직접 제작한 딥페이크를 만들어서 제작 하였습니다.   
 ![image](https://github.com/user-attachments/assets/2e35a447-22a9-4e09-8d40-c9d44578f66f)
 
 2. 데이터셋 전처리
-FaceNet에 기반한 MTCNN 모델을 활용하여 이미지를 아래 표와 같은 형태로 이미지에서 얼굴 특징점 위치를 리턴받아 원본 이미지에서 눈, 코, 입 부분만 동영상 50프레임당 한 장씩 추출하였습니다.
+FaceNet에 기반한 MTCNN 모델을 활용하여 이미지를 아래 표와 같은 형태로 이미지에서 얼굴 특징점 위치를 리턴받아 원본 이미지에서 눈, 코, 입 부분만 동영상 50프레임당 한 장씩 추출하였습니다.   
 ![image](https://github.com/user-attachments/assets/65120949-5cac-4791-b969-c77b2b8b26c3)
 
 3. 딥페이크 판독
-Microsoft Azure Custom Vision을 이용해 데이터셋을 학습하고, 이를 통해 학습된 모델은 아래와 같은 결과를 리턴하게 됩니다.
-
+Microsoft Azure Custom Vision을 이용해 데이터셋을 학습하고, 이를 통해 학습된 모델은 아래와 같은 결과를 리턴하게 됩니다.   
 ![image](https://github.com/user-attachments/assets/958c1040-485e-4195-8441-e743a3445cf9)
-Azure API 결과
+Azure API 결과   
 
 이러한 Not DeepFake, DeepFake 확률을 최대 확률, 최소 확률, 평균 확률 ,총합 확률을 종합하여 딥페이크를 판단하게 합니다.
 
