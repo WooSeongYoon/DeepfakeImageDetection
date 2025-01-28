@@ -1,6 +1,6 @@
 # DeepfakeImageDetection
 Azure(Custom Vision) API을 활용한 딥페이크 영상 분석   
-개발 인원: 우성윤, 안동휘, 박규섭
+개발 인원: 우성윤, 안동휘, 박규섭   
 시연 영상: https://youtu.be/JvD0_NqNUQk   
 
 ## 개발 배경
